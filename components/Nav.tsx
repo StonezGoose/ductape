@@ -40,12 +40,15 @@ export default function Nav() {
           ))}
         </div>
 
-        <Link
-          href="/subscribe"
-          className="border border-white/25 text-white/75 px-5 py-2 text-xs font-medium tracking-[0.2em] uppercase hover:border-white/50 hover:text-white transition-colors duration-200"
-        >
-          Subscribe
-        </Link>
+        <div className="flex items-center gap-6">
+          <Image src={IMAGES.logo} alt="Ductape" width={120} height={12} />
+          <Link
+            href="/subscribe"
+            className="border border-white/25 text-white/75 px-5 py-2 text-xs font-medium tracking-[0.2em] uppercase hover:border-white/50 hover:text-white transition-colors duration-200"
+          >
+            Subscribe
+          </Link>
+        </div>
       </div>
     </nav>
   );
