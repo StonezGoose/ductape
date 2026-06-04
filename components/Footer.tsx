@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { SOCIAL, CONTACT, NAV, IMAGES } from "@/lib/content";
+import { SOCIAL, CONTACT, NAV } from "@/lib/content";
 
 const socialList = [
   { label: "Spotify",      href: SOCIAL.spotify },
@@ -28,7 +27,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
           {/* Logo + tagline */}
           <div className="col-span-2 md:col-span-1">
-            <Image src={IMAGES.logo} alt="Ductape" width={140} height={14} className="mb-4" />
+            <h3 className="text-white font-light text-sm tracking-[0.3em] uppercase mb-4">Ductape</h3>
             <p className="text-white/30 text-xs leading-relaxed">
               Post-punk · Darkwave
               <br />Istanbul / Berlin

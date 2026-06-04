@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { NAV, IMAGES } from "@/lib/content";
+import { NAV } from "@/lib/content";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +24,7 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center hover:opacity-70 transition-opacity">
-          <Image src={IMAGES.logo} alt="Ductape" width={140} height={14} priority />
+          <span className="text-white font-light text-sm tracking-[0.3em] uppercase">Ductape</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
@@ -40,15 +39,12 @@ export default function Nav() {
           ))}
         </div>
 
-        <div className="flex items-center gap-6">
-          <Image src={IMAGES.logo} alt="Ductape" width={120} height={12} />
-          <Link
-            href="/subscribe"
-            className="border border-white/25 text-white/75 px-5 py-2 text-xs font-medium tracking-[0.2em] uppercase hover:border-white/50 hover:text-white transition-colors duration-200"
-          >
-            Subscribe
-          </Link>
-        </div>
+        <Link
+          href="/subscribe"
+          className="border border-white/25 text-white/75 px-5 py-2 text-xs font-medium tracking-[0.2em] uppercase hover:border-white/50 hover:text-white transition-colors duration-200"
+        >
+          Subscribe
+        </Link>
       </div>
     </nav>
   );
