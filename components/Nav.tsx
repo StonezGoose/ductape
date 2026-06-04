@@ -25,7 +25,7 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center hover:opacity-70 transition-opacity">
-          <span className="text-white font-light text-lg tracking-widest">DUCTAPE</span>
+          <Image src={IMAGES.logo} alt="Ductape" width={140} height={14} priority />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
