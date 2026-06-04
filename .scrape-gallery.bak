@@ -1,0 +1,54 @@
+import { CheerioCrawler } from 'crawlee';
+
+const crawler = new CheerioCrawler({
+  maxRequestsPerCrawl: 1000,
+  async requestHandler({ request, $ }) {
+    console.log(`Processing: ${request.url}`);
+
+    const photos = [];
+
+    // Try multiple selectors for gallery images
+    const imageSelectors = [
+      'img[data-src]',     // Lazy-loaded images
+      'img.gallery-photo',
+      'img[alt*="ductape"]',
+      'div.gallery img',
+      'figure img',
+      'a[href*="media"] img',
+      'img[src*="wixstatic"]'
+    ];
+
+    imageSelectors.forEach(selector => {
+      $(selector).each((i, el) => {
+        const $img = $(el);
+        let src = $img.attr('src') || $img.attr('data-src');
+        const alt = $img.attr('alt') || 'Ductape';
+
+        if (src && (src.includes('wixstatic') || src.includes('media'))) {
+          // Resolve relative URLs
+          if (!src.startsWith('http')) {
+            src = new URL(src, request.url).href;
+          }
+
+          photos.push({
+            src,
+            alt,
+            label: '',
+            category: 'promo'
+          });
+        }
+      });
+    });
+
+    if (photos.length > 0) {
+      console.log(`Found ${photos.length} photos on ${request.url}`);
+      photos.forEach((p, idx) => {
+        console.log(`  ${idx + 1}. ${p.src}`);
+      });
+    }
+  }
+});
+
+// Start scraping
+await crawler.run(['https://www.ductape.info/gallery']);
+console.log('Gallery scraping complete');

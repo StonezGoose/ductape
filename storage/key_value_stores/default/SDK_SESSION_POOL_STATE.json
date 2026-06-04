@@ -1,0 +1,61 @@
+{
+  "usableSessionsCount": 1,
+  "retiredSessionsCount": 0,
+  "sessions": [
+    {
+      "id": "session_oE04Z2a8Vx",
+      "cookieJar": {
+        "version": "tough-cookie@6.0.1",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "ssr-caching",
+            "value": "cache#desc=miss#varnish=miss_hit#dc#desc=fastly_g",
+            "maxAge": 20,
+            "domain": "www.ductape.info",
+            "path": "/",
+            "hostOnly": true,
+            "pathIsDefault": true,
+            "creation": "2026-06-04T02:03:47.091Z",
+            "lastAccessed": "2026-06-04T02:03:47.091Z"
+          },
+          {
+            "key": "client-session-bind",
+            "value": "56cd15c8-7e23-40e2-ba79-c1f37a701541",
+            "domain": "www.ductape.info",
+            "path": "/",
+            "secure": true,
+            "hostOnly": true,
+            "creation": "2026-06-04T02:03:47.091Z",
+            "lastAccessed": "2026-06-04T02:03:47.091Z",
+            "sameSite": "lax"
+          },
+          {
+            "key": "server-session-bind",
+            "value": "56cd15c8-7e23-40e2-ba79-c1f37a701541",
+            "domain": "www.ductape.info",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": true,
+            "creation": "2026-06-04T02:03:47.092Z",
+            "lastAccessed": "2026-06-04T02:03:47.092Z",
+            "sameSite": "lax"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2026-06-04T02:53:46.409Z",
+      "createdAt": "2026-06-04T02:03:46.409Z",
+      "usageCount": 1,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}

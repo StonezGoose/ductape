@@ -1,0 +1,180 @@
+// ─── Gallery photos ────────────────────────────────────────────
+// category: "promo" = Image Gallery section, "live" = Live Photos section
+// Updated via admin panel
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+export const GALLERY_PHOTOS = adminData?.gallery ?? [
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_95246db5aecc4559b4d47990d8a100ee~mv2.jpg/v1/fill/w_319,h_319,fp_0.57_0.47,q_90,enc_avif,quality_auto/c82d5f_95246db5aecc4559b4d47990d8a100ee~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_199dada3d4314c83ae2f12424a508a96~mv2.jpg/v1/fill/w_320,h_319,fp_0.41_0.32,q_90,enc_avif,quality_auto/c82d5f_199dada3d4314c83ae2f12424a508a96~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_4e38fe6c23d74597a5b96187be7f665d~mv2.png/v1/fill/w_319,h_319,fp_0.4_0.28,q_90,enc_avif,quality_auto/c82d5f_4e38fe6c23d74597a5b96187be7f665d~mv2.png",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_4f02e48b62ad4b788bc0225494d8f837~mv2.png/v1/fill/w_319,h_319,fp_0.51_0.4,q_90,enc_avif,quality_auto/c82d5f_4f02e48b62ad4b788bc0225494d8f837~mv2.png",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_a5928a27b2b74afa99dab9eab07eab8e~mv2.jpg/v1/fill/w_320,h_319,fp_0.5_0.34,q_90,enc_avif,quality_auto/c82d5f_a5928a27b2b74afa99dab9eab07eab8e~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_a4b69f1fc8c244c38c99ed5601c845f3~mv2.jpg/v1/fill/w_319,h_319,fp_0.5_0.45,q_90,enc_avif,quality_auto/c82d5f_a4b69f1fc8c244c38c99ed5601c845f3~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_f2e9f1af53b541488b1ba06626bc88ad~mv2.jpg/v1/fill/w_319,h_319,fp_0.54_0.28,q_90,enc_avif,quality_auto/c82d5f_f2e9f1af53b541488b1ba06626bc88ad~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_9c7b772b57564f9fa24bd33a42ecf99e~mv2.png/v1/fill/w_320,h_319,fp_0.47_0.23,q_90,enc_avif,quality_auto/c82d5f_9c7b772b57564f9fa24bd33a42ecf99e~mv2.png",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_78f5ae76c65546d894ef712412d67d65~mv2.jpg/v1/fill/w_319,h_319,fp_0.35_0.21,q_90,enc_avif,quality_auto/c82d5f_78f5ae76c65546d894ef712412d67d65~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_016c27e313334d93961455c3d998977c~mv2.jpg/v1/fill/w_319,h_319,fp_0.41_0.31,q_90,enc_avif,quality_auto/c82d5f_016c27e313334d93961455c3d998977c~mv2.jpg",
+    "alt": "Ductape Photo",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_a2a395af850d468ba5ad32f5119a5ecc~mv2.jpg/v1/fill/w_320,h_319,fp_0.48_0.39,q_90,enc_avif,quality_auto/c82d5f_a2a395af850d468ba5ad32f5119a5ecc~mv2.jpg",
+    "alt": "Ductape Photos",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_2b565dc81cca400b8e849aa559166ce8~mv2.jpg/v1/fill/w_319,h_319,fp_0.32_0.43,q_90,enc_avif,quality_auto/c82d5f_2b565dc81cca400b8e849aa559166ce8~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_58f5f85be0684a39b0ba7ad97289692b~mv2.jpg/v1/fill/w_319,h_319,fp_0.41_0.18,q_90,enc_avif,quality_auto/c82d5f_58f5f85be0684a39b0ba7ad97289692b~mv2.jpg",
+    "alt": "Ductape Photos",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_00da248644ad44c581859e19eece0b51~mv2.jpg/v1/fit/w_480,h_320,q_90,enc_avif,quality_auto/c82d5f_00da248644ad44c581859e19eece0b51~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_80cb7088e4ed47b7bf237efdeebe9de7~mv2.jpg/v1/fit/w_480,h_320,q_90,enc_avif,quality_auto/c82d5f_80cb7088e4ed47b7bf237efdeebe9de7~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_b6a4fd1c76584a29a3cf07071218b6e4~mv2.jpg/v1/fit/w_980,h_653,q_90,enc_avif,quality_auto/c82d5f_b6a4fd1c76584a29a3cf07071218b6e4~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_da3a858f2e2042cc8e71a77d306073e7~mv2.jpg/v1/fit/w_480,h_320,q_90,enc_avif,quality_auto/c82d5f_da3a858f2e2042cc8e71a77d306073e7~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_0471a013d67c4fa699b94591f7437a37~mv2.jpg/v1/fit/w_480,h_320,q_90,enc_avif,quality_auto/c82d5f_0471a013d67c4fa699b94591f7437a37~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_80512286dd36441faecb474dfe244c80~mv2.jpg/v1/fit/w_420,h_360,q_90,enc_avif,quality_auto/c82d5f_80512286dd36441faecb474dfe244c80~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_590063b4565f48eabc092ad075ce4cb9~mv2.jpg/v1/fit/w_540,h_360,q_90,enc_avif,quality_auto/c82d5f_590063b4565f48eabc092ad075ce4cb9~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_99ba3f51b514472da15e396ce5c50980~mv2.png/v1/fit/w_481,h_322,q_90,enc_avif,quality_auto/c82d5f_99ba3f51b514472da15e396ce5c50980~mv2.png",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_c616ba972aaf4d96a6ee51f67a1ea570~mv2.jpg/v1/fit/w_484,h_322,q_90,enc_avif,quality_auto/c82d5f_c616ba972aaf4d96a6ee51f67a1ea570~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_c2a32cf76a13459a98eba58156b550c3~mv2.jpg/v1/fit/w_980,h_655,q_90,enc_avif,quality_auto/c82d5f_c2a32cf76a13459a98eba58156b550c3~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_f948166213aa463996f96af6ff379a16~mv2.png/v1/fit/w_452,h_301,q_90,enc_avif,quality_auto/c82d5f_f948166213aa463996f96af6ff379a16~mv2.png",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_959375d98cb94faeae5083d5f67ed1ed~mv2.jpg/v1/fit/w_303,h_202,q_90,enc_avif,quality_auto/c82d5f_959375d98cb94faeae5083d5f67ed1ed~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_70fdc0fd7cc94ee69a7e7e2d5e63170f~mv2.png/v1/fit/w_134,h_202,q_90,enc_avif,quality_auto/c82d5f_70fdc0fd7cc94ee69a7e7e2d5e63170f~mv2.png",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_7422f6833c404caabbcac84a64925f88~mv2.jpg/v1/fit/w_513,h_339,q_90,enc_avif,quality_auto/c82d5f_7422f6833c404caabbcac84a64925f88~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_1c7dfdcb9d2f4d6dbcc1171b3e9086be~mv2.jpg/v1/fit/w_252,h_164,q_90,enc_avif,quality_auto/c82d5f_1c7dfdcb9d2f4d6dbcc1171b3e9086be~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  },
+  {
+    "src": "https://static.wixstatic.com/media/c82d5f_bb9e5b6d44144c5395a1a884734916f2~mv2.jpg/v1/fit/w_246,h_164,q_90,enc_avif,quality_auto/c82d5f_bb9e5b6d44144c5395a1a884734916f2~mv2.jpg",
+    "alt": "Ductape",
+    "label": "",
+    "category": "promo"
+  }
+];

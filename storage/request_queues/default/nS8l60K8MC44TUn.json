@@ -1,0 +1,9 @@
+{
+	"id": "nS8l60K8MC44TUn",
+	"json": "{\"id\":\"nS8l60K8MC44TUn\",\"url\":\"https://www.ductape.info/gallery\",\"loadedUrl\":\"https://www.ductape.info/gallery\",\"uniqueKey\":\"https://www.ductape.info/gallery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-04T02:03:47.094Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ductape.info/gallery",
+	"url": "https://www.ductape.info/gallery"
+}

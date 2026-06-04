@@ -1,0 +1,77 @@
+import { CheerioCrawler } from 'crawlee';
+import fs from 'fs';
+
+const photos = [];
+
+const crawler = new CheerioCrawler({
+  maxRequestsPerCrawl: 1000,
+  async requestHandler({ request, $ }) {
+    console.log(`Processing: ${request.url}`);
+
+    // Focus on gallery grid images
+    const $images = $('img');
+
+    $images.each((i, el) => {
+      const $img = $(el);
+      let src = $img.attr('src') || $img.attr('data-src');
+      const alt = $img.attr('alt') || 'Ductape';
+      const title = $img.attr('title') || '';
+
+      if (!src) return;
+
+      // Filter: only include actual photos (not icons/logos)
+      // - Must be from wixstatic and larger than small icons
+      // - Skip logos, social icons, tiny images
+      const isPhoto =
+        src.includes('wixstatic') &&
+        src.includes('c82d5f') && // Band's image ID
+        !src.includes('logo') &&
+        !src.includes('social') &&
+        !src.includes('icon') &&
+        !alt.toLowerCase().includes('icon') &&
+        !alt.toLowerCase().includes('logo') &&
+        !alt.toLowerCase().includes('facebook') &&
+        !alt.toLowerCase().includes('instagram') &&
+        !alt.toLowerCase().includes('youtube');
+
+      if (isPhoto) {
+        // Resolve relative URLs
+        if (!src.startsWith('http')) {
+          src = new URL(src, request.url).href;
+        }
+
+        const photo = {
+          src,
+          alt: alt || 'Ductape Gallery',
+          label: '',
+          category: 'promo'
+        };
+
+        // Avoid duplicates
+        if (!photos.some(p => p.src === photo.src)) {
+          photos.push(photo);
+          console.log(`Added photo ${photos.length}: ${src.substring(0, 80)}...`);
+        }
+      }
+    });
+  }
+});
+
+// Start scraping
+await crawler.run(['https://www.ductape.info/gallery']);
+
+console.log(`\n✓ Found ${photos.length} gallery photos\n`);
+
+// Generate TypeScript code
+const tsCode = `// ─── Gallery photos ────────────────────────────────────────────
+// category: "promo" = Image Gallery section, "live" = Live Photos section
+// Updated via admin panel
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+export const GALLERY_PHOTOS = adminData?.gallery ?? ${JSON.stringify(photos, null, 2)};`;
+
+console.log('Generated TypeScript:\n');
+console.log(tsCode);
+
+// Save to file for reference
+fs.writeFileSync('gallery-photos.ts', tsCode);
+console.log('\n✓ Saved to gallery-photos.ts');
